@@ -44,7 +44,7 @@ case $choice in
         # Windows Server 2022
         img_file="windows2025.img"
         iso_link="https://go.microsoft.com/fwlink/?linkid=2345730&clcid=0x409&culture=en-us&country=us"
-        iso_file="windows2022.iso"
+        iso_file="windows2025.iso"
         ;;
     4)
         # Windows 10
