@@ -34,24 +34,24 @@ display_menu
 
 case $choice in
     1)
-        img_file="winserver2016.img"
-        iso_file="winserver2016.iso"
+        img_file="windows2016.img"
+        iso_file="windows2016.iso"
         iso_link="https://go.microsoft.com/fwlink/p/?LinkID=2195174&clcid=0x409&culture=en-us&country=US"
         ;;
     2)
-        img_file="winserver2019.img"
-        iso_file="winserver2019.iso"
+        img_file="windows2019.img"
+        iso_file="windows2019.iso"
         iso_link="https://go.microsoft.com/fwlink/p/?LinkID=2195167&clcid=0x409&culture=en-us&country=US"
         ;;
     3)
-        img_file="winserver2022.img"
-        iso_file="winserver2022.iso"
+        img_file="windows2022.img"
+        iso_file="windows2022.iso"
         iso_link="https://go.microsoft.com/fwlink/?linkid=2195280&clcid=0x409&culture=en-us&country=US"
         ;;
     4)
-        img_file="winserver2025.img"
-        iso_file="winserver2025.iso"
-        iso_link="https://go.microsoft.com/fwlink/?linkid=2345730&clcid=0x409&culture=en-us&country=us" # ganti link official
+        img_file="windows2025.img"
+        iso_file="windows2025.iso"
+        iso_link="https://go.microsoft.com/fwlink/?linkid=2345730&clcid=0x409&culture=en-us&country=US" # ganti link official
         ;;
     5)
         img_file="windows10.img"
@@ -95,8 +95,7 @@ echo "Versi dipilih: $iso_file"
 qemu-img create -f raw "$img_file" 40G
 
 # Download VirtIO
-wget -O virtio-win.iso \
-https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable/virtio-win.iso
+wget -O virtio-win.iso 'https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.285-1/virtio-win-0.1.285.iso'
 
 # Download Windows ISO
 wget -O "$iso_file" "$iso_link"
