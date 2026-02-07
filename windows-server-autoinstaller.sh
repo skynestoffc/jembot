@@ -42,8 +42,8 @@ case $choice in
         ;;
     3)
         # Windows Server 2022
-        img_file="windows2022.img"
-        iso_link="https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US"
+        img_file="windows2025.img"
+        iso_link="https://go.microsoft.com/fwlink/?linkid=2345730&clcid=0x409&culture=en-us&country=us"
         iso_file="windows2022.iso"
         ;;
     4)
